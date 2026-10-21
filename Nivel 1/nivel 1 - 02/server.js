@@ -1,3 +1,4 @@
+import "dotenv/config";
 // import http from "http"; ANTES DO EXPRESS
 import app from "./src/app.js";
 
