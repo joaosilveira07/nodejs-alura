@@ -42,14 +42,14 @@ routes(app);
 //     res.status(200).send(livros);
 // });
 
-app.delete("/livros/:id", (req, res) => {
-    const index = buscaLivro(req.params.id);
-    if (index !== -1){
-        livros.splice(index, 1);
-        res.status(200).send("livro removido com sucesso!");
-    } else {
-        res.status(404).send("livro não foi encontrado.");
-    }
-});
+// app.delete("/livros/:id", (req, res) => {
+//     const index = buscaLivro(req.params.id);
+//     if (index !== -1){
+//         livros.splice(index, 1);
+//         res.status(200).send("livro removido com sucesso!");
+//     } else {
+//         res.status(404).send("livro não foi encontrado.");
+//     }
+// });
 
 export default app;
